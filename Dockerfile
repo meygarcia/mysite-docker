@@ -5,7 +5,7 @@ RUN 	apt-get update && \
 
 COPY ./src /var/www/html/
 
-EXPOSE 
+EXPOSE 80 
 
 ENTRYPOINT [ "apachectl", "-D", "FOREGROUND" ]
  
